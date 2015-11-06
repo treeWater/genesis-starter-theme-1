@@ -1,0 +1,53 @@
+/*!
+Theme Name: Genesis Starter Theme
+Theme URI: http://www.website.com
+Description: Starter Theme
+Author: Craig Simpson
+Version: 1.0.0
+Text Domain: genesis-starter-theme
+Template: genesis
+*/
+
+@import "../vendor/bourbon/app/assets/stylesheets/bourbon";
+@import "../vendor/neat/app/assets/stylesheets/neat";
+
+@import 'helpers/functions';
+@import 'helpers/variables';
+@import 'helpers/breakpoints';
+@import 'helpers/mixins';
+@import 'helpers/colours';
+
+/*--------------------------------------------------------------
+Defaults
+--------------------------------------------------------------*/
+
+@import "defaults/reset";
+@import "defaults/defaults";
+@import "defaults/typography";
+
+/*--------------------------------------------------------------
+Layout
+--------------------------------------------------------------*/
+
+@import "layout/wrapper";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
+
+/*--------------------------------------------------------------
+Components
+--------------------------------------------------------------*/
+
+@import "components/accessibility";
+@import "components/media";
+
+/*--------------------------------------------------------------
+Pages
+--------------------------------------------------------------*/
+
+@import "pages/front-page";
+@import "pages/contact";
+
+/*--------------------------------------------------------------
+Vendor
+--------------------------------------------------------------*/

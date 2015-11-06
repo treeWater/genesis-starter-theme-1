@@ -1,0 +1,52 @@
+# Default application configuration that all configurations inherit from:
+# https://github.com/causes/scss-lint/blob/master/config/default.yml
+
+# Everything below is amendments to the defaults.
+linters:
+  Comment:
+   enabled: false
+
+  Indentation:
+    character: tab
+    width: 1 # Set to one, as tabs are used, not spaces.
+
+  LeadingZero:
+    style: include_zero
+
+  NestingDepth:
+    max_depth: 3
+
+  PropertyCount:
+    enabled: false
+
+  PropertySortOrder:
+    enabled: true
+
+  QualifyingElement:
+    allow_element_with_attribute: true
+
+  SelectorDepth:
+    enabled: false
+    max_depth: 3
+
+  SelectorFormat:
+    ignored_names:
+      - sfHover
+
+  SingleLinePerProperty:
+    allow_single_line_rule_sets: false
+
+  StringQuotes:
+    style: double_quotes
+
+  TrailingZero:
+    enabled: true
+
+  TransitionAll:
+    enabled: false
+
+  VariableForProperty:
+    enabled: true
+
+  UrlQuotes:
+    enabled: false
