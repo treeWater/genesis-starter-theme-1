@@ -68,7 +68,7 @@ gulp.task( 'styles' , function() {
 
 // Scripts
 gulp.task( 'scripts' , function() {
-    return gulp.src( 'assets/js/*' )
+    return gulp.src( 'assets/js/**/*.js' )
         .pipe( jshint( '.jshintrc' ) )
         .pipe( jshint.reporter( 'default' ) )
         .pipe( sourcemaps.init() )
