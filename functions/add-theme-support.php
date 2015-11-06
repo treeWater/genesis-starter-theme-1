@@ -78,10 +78,3 @@ add_theme_support( 'genesis-accessibility', array(
  * @since 1.0
  */
 add_theme_support( 'genesis-footer-widgets', 3 );
-
-/**
- * Use HTML5 semantic headings
- *
- * @since 1.0
- */
-add_filter( 'genesis_pre_get_option_semantic_headings', '__return_true' );
