@@ -22,4 +22,4 @@ In an effort to move away from a disorganised and length `functions.php`, I've m
 
 ## Templates / Views
 
-Custom page templates will be held within the `templates` folder. I will also typically abstract out markup (such as single entries from a custom loop) into small files held within the `/templates/views/` folder. In order to reference these files easily I have defined a `CHILD_THEME_VIEWS` constant within the theme `functions.php` file, which can be used like: `include CHILD_THEME_VIEWS . 'filename.php' within templates.
+Custom page templates will be held within the `templates` folder. I will also typically abstract out markup (such as single entries from a custom loop) into small files held within the `/templates/views/` folder. In order to reference these files easily I have defined a `CHILD_THEME_VIEWS` constant within the theme `functions.php` file, which can be used like: `include CHILD_THEME_VIEWS . 'filename.php'` within templates.
