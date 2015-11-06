@@ -1,5 +1,6 @@
 // Project Configuration
-var url         = 'localhost.dev';
+var url         = 'locahost.dev',
+    textdomain  = 'genesis-starter-theme';
 
 // Include Gulp
 var gulp        = require( 'gulp' );
@@ -16,6 +17,8 @@ var sass        = require( 'gulp-sass' ),
     postcss     = require( 'gulp-postcss' ),
     mqpacker    = require( 'css-mqpacker' ),
     pxtorem     = require( 'postcss-pxtorem' ),
+    potgen      = require( 'gulp-wp-pot' ),
+    sort        = require( 'gulp-sort' ),
     browserSync = require( 'browser-sync' ).create();
 
 // Set up BrowserSync.
@@ -25,6 +28,17 @@ gulp.task( 'initServer' , function() {
         proxy: url
     });
 
+});
+
+// Generate .pot file.
+gulp.task( 'i18n' , function () {
+    return gulp.src('**/*.php')
+        .pipe( sort() )
+        .pipe( potgen( {
+            domain: textdomain,
+            destFile: textdomain + '.pot'
+        } ))
+        .pipe(gulp.dest('./languages/'));
 });
 
 // Watch Task.
