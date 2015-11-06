@@ -16,7 +16,6 @@ var sass        = require( 'gulp-sass' ),
     postcss     = require( 'gulp-postcss' ),
     mqpacker    = require( 'css-mqpacker' ),
     pxtorem     = require( 'postcss-pxtorem' ),
-    scsslint    = require( 'gulp-scss-lint' ),
     browserSync = require( 'browser-sync' ).create();
 
 // Set up BrowserSync.
@@ -65,12 +64,6 @@ gulp.task( 'styles' , function() {
         .pipe( notify( { message: 'Stylesheet compiled & saved.' } ) )
         .pipe( browserSync.stream() );
 
-});
-
-// SCSS Lint
-gulp.task('scsslint', function() {
-  return gulp.src( 'assets/scss/**/*.scss' )
-    .pipe(scsslint());
 });
 
 // Scripts
