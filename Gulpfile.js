@@ -1,11 +1,11 @@
-// Project Configuration
+// Project Configuration.
 var url         = 'locahost.dev',
     textdomain  = 'genesis-starter-theme';
 
-// Include Gulp
+// Include Gulp.
 var gulp        = require( 'gulp' );
 
-// Include Plugins
+// Include Plugins.
 var sass        = require( 'gulp-sass' ),
     sourcemaps  = require( 'gulp-sourcemaps' ),
     plumber     = require( 'gulp-plumber' ),
@@ -21,25 +21,10 @@ var sass        = require( 'gulp-sass' ),
     sort        = require( 'gulp-sort' ),
     browserSync = require( 'browser-sync' ).create();
 
-// Set up BrowserSync.
-gulp.task( 'initServer' , function() {
-    // Initiate browsersync using the local url
-    browserSync.init({
-        proxy: url
-    });
-
-});
-
-// Generate .pot file.
-gulp.task( 'i18n' , function () {
-    return gulp.src('**/*.php')
-        .pipe( sort() )
-        .pipe( potgen( {
-            domain: textdomain,
-            destFile: textdomain + '.pot'
-        } ))
-        .pipe(gulp.dest('./languages/'));
-});
+// Default Tasks.
+gulp.task( 'default' , [ 'watch' ] );
+gulp.task( 'serve' , [ 'server', 'watch' ] );
+gulp.task( 'build' , [ 'scripts', 'images', 'styles', 'i18n' ] )
 
 // Watch Task.
 gulp.task( 'watch' , function() {
@@ -52,7 +37,56 @@ gulp.task( 'watch' , function() {
 
 });
 
-// Styles
+// Set up BrowserSync.
+gulp.task( 'server' , function() {
+
+    // Initiate BrowserSync using the local url (defined above).
+    browserSync.init({
+        proxy: url
+    });
+
+});
+
+// Run `gulp i18n` to generate .pot file using the theme textdomain (defined above).
+gulp.task( 'i18n' , function () {
+
+    return gulp.src('**/*.php')
+        .pipe( sort() )
+        .pipe( potgen( {
+            domain: textdomain,
+            destFile: textdomain + '.pot'
+        } ))
+        .pipe(gulp.dest('./languages/'));
+
+});
+
+// Scripts task.
+gulp.task( 'scripts' , function() {
+
+    return gulp.src( 'assets/js/**/*.js' )
+        .pipe( jshint( '.jshintrc' ) )
+        .pipe( jshint.reporter( 'default' ) )
+        .pipe( sourcemaps.init() )
+            .pipe( concat( 'theme.js' ) )
+        .pipe( sourcemaps.write() )
+        .pipe( gulp.dest( './js' ) )
+        .pipe( notify( { message: 'Javascript tasks run.' } ) )
+        .pipe( browserSync.stream() );
+
+} );
+
+// Images task.
+gulp.task( 'images' , function() {
+
+    return gulp.src( 'assets/images/**/*' )
+        .pipe( cache( imagemin( { optimizationLevel: 3, progressive: true, interlaced: true } ) ) )
+        .pipe( gulp.dest( './images' ) )
+        .pipe( notify( { message: 'Images task complete.' } ) )
+        .pipe( browserSync.stream() );
+
+} );
+
+// Styles tasks.
 gulp.task( 'styles' , function() {
 
     var postProcessors = [
@@ -79,29 +113,3 @@ gulp.task( 'styles' , function() {
         .pipe( browserSync.stream() );
 
 });
-
-// Scripts
-gulp.task( 'scripts' , function() {
-    return gulp.src( 'assets/js/**/*.js' )
-        .pipe( jshint( '.jshintrc' ) )
-        .pipe( jshint.reporter( 'default' ) )
-        .pipe( sourcemaps.init() )
-            .pipe( concat( 'theme.js' ) )
-        .pipe( sourcemaps.write() )
-        .pipe( gulp.dest( './js' ) )
-        .pipe( notify( { message: 'Javascript tasks run.' } ) )
-        .pipe( browserSync.stream() );
-} );
-
-// Images
-gulp.task( 'images' , function() {
-    return gulp.src( 'assets/images/**/*' )
-        .pipe( cache( imagemin( { optimizationLevel: 3, progressive: true, interlaced: true } ) ) )
-        .pipe( gulp.dest( './images' ) )
-        .pipe( notify( { message: 'Images task complete.' } ) )
-        .pipe( browserSync.stream() );
-} );
-
-// Default Tasks
-gulp.task( 'default' , ['watch'] );
-gulp.task( 'serve' , ['initServer', 'watch'] );
