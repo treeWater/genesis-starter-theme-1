@@ -10,7 +10,7 @@ module.exports = {
     src: sources.code,
     textdomain: "genesis-starter-theme",
     dest: "./languages/",
-    message: "Internationalization tasks complete."
+    message: "i18n tasks complete."
   },
   images: {
     src: sources.images,
@@ -21,7 +21,7 @@ module.exports = {
     src: sources.scripts,
     output: "theme.js",
     dest: "./js/",
-    message: "Javascript tasks run."
+    message: "Javascript tasks complete."
   },
   server: {
     url: "localhost.dev"
