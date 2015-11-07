@@ -15,7 +15,7 @@ When running `gulp` or `gulp serve`, changes to the `/assets/` directory will be
 
 ## Installation
 
-Clone the repository to your WordPress `/themes/` directory. It won't work straight out of the box, because there's no compiled  stylesheet held within the theme. 
+Clone the repository to your WordPress `/themes/` directory. It won't work straight out of the box, because there's no compiled stylesheet held within the repository. 
 
 To get started you'll need to `cd` into the theme and run `npm install && bower install`. Once this has completed, run `gulp build` to run through the initial build process and copy across your images, js and compiled SCSS for the first time. You should now be able to activate the theme within your WordPress dashboard. 
 
