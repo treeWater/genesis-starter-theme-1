@@ -4,7 +4,7 @@ This is my starter theme for creating custom websites using the Genesis Framewor
 
 Initial setup uses Bower to load front end dependencies (initially loading only Bourbon and Neat into the /vendor/ directory) and Gulp to perform automated tasks including compiling SCSS, concatenating JS, and optimizing images held within the `/assets/` directory.
 
-Browsersync is also included - edit the `url` variable included within the `/tasks/config.js` file to let BrowserSync know the local vhost in use, then use `gulp server` to initialize.
+Browsersync is also included - edit the `url` variable included within the `/tasks/config.js` file to let BrowserSync know the local vhost in use, then use `gulp serve` to initialize.
 
 When running `gulp` or `gulp serve`, changes to the `/assets/` directory will be immediately picked up and the files dealt with in the following ways:
 
