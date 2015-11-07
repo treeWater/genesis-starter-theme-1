@@ -31,7 +31,7 @@ remove_action( 'wp_head', 'feed_links_extra', 3 );
  */
 remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
 
-add_filter( 'genesis_seo_title', 'gst_header_inline_logo', 10, 3 );
+//add_filter( 'genesis_seo_title', 'gst_header_inline_logo', 10, 3 );
 /**
  * Inline logo file
  *
