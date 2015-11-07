@@ -1,5 +1,4 @@
 **/node_modules/**
-**/assets/scss/neat/**
-**/assets/scss/base/**
-**/assets/scss/bourbon/**
-**/bower_components/**
+**/vendor/bourbon/**
+**/vendor/neat/**
+**/languages/**
