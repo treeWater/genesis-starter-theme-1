@@ -27,10 +27,10 @@ function genesis_starter_theme_setup() {
 	define( 'CHILD_THEME_VIEWS', get_stylesheet_directory() . '/templates/views/' );
 
 	$includes = [
-		'includes/add-theme-support.php',
-		'includes/enqueue-assets.php',
-		'includes/theme/header.php',
-		'includes/shame.php',
+		'functions/add-theme-support.php',
+		'functions/enqueue-assets.php',
+		'functions/header.php',
+		'functions/shame.php',
 	];
 
 	array_walk( $includes, function ( $include ) {
