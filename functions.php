@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-add_action( 'genesis_setup', 'genesis_starter_theme_setup', 14 );
+add_action( 'genesis_setup', 'genesis_starter_theme_setup', 15 );
 /**
  * After Genesis has finished loading, load up child theme files.
  *
