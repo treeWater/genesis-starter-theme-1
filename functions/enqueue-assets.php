@@ -45,3 +45,16 @@ function gst_pre_load_favicon() {
 	return get_stylesheet_directory_uri() . '/images/favicon.ico';
 
 }
+
+add_filter( 'wp_default_scripts', 'gst_remove_jquery_migrate' );
+/**
+ * Remove jQuery Migrate.
+ * @param  array &$scripts Array of scripts loaded.
+ * @return array           Modo
+ */
+function gst_remove_jquery_migrate( &$scripts ) {
+    if ( ! is_admin() ) {
+        $scripts->remove( 'jquery' );
+        $scripts->add( 'jquery', false, [ 'jquery-core' ] , '1.10.2' );
+    }
+}
