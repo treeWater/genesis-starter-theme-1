@@ -6,7 +6,7 @@ Initial setup uses Bower to load front end dependencies (initially loading only 
 
 ## Installation
 
-Clone the repository to your WordPress `/themes/` directory. It won't work straight out of the box, because there's no compiled stylesheet held within the repository. You'll need to hook up your preferred task runner (for me it's Gulp) and output everything in `/assets/` to the theme root. [I use Gulp for this](https://github.com/craigsimps/gulp-build-tasks/).
+Clone the repository to your WordPress `/themes/` directory. It won't work straight out of the box, because there's no compiled stylesheet held within the repository. You'll need to hook up your preferred task runner and output everything in `/assets/` to the theme root. [I use Gulp for this](https://github.com/craigsimps/gulp-build-tasks/).
 
 ## Theme Functions File
 
