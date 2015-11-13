@@ -2,11 +2,11 @@
 
 This is my starter theme for creating custom websites using the Genesis Framework.
 
-Initial setup uses Bower to load front end dependencies (initially loading only Bourbon and Neat into the /vendor/ directory) and I would typically use Gulp to automate tasks such as compiling SCSS, optimizing images, linting and concatenation scripts, adding languages .pot files, you get the idea. I haven't included the Gulp tasks within the theme, as they're [in another repository](https://github.com/craigsimps/gulp-build-files/).
+Initial setup uses Bower to load front end dependencies (initially loading only Bourbon and Neat into the /vendor/ directory) and I would typically use Gulp to automate tasks such as compiling SCSS, optimizing images, linting and concatenation scripts, adding languages .pot files, you get the idea. I haven't included the Gulp tasks within the theme, as they're [in another repository](https://github.com/craigsimps/gulp-build-tasks/).
 
 ## Installation
 
-Clone the repository to your WordPress `/themes/` directory. It won't work straight out of the box, because there's no compiled stylesheet held within the repository. You'll need to hook up your preferred task runner (for me it's Gulp) and output everything in `/assets/` to the theme root. [I use Gulp for this](https://github.com/craigsimps/gulp-build-files/).
+Clone the repository to your WordPress `/themes/` directory. It won't work straight out of the box, because there's no compiled stylesheet held within the repository. You'll need to hook up your preferred task runner (for me it's Gulp) and output everything in `/assets/` to the theme root. [I use Gulp for this](https://github.com/craigsimps/gulp-build-tasks/).
 
 ## Theme Functions File
 
