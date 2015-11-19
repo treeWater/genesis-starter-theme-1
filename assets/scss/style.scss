@@ -8,8 +8,8 @@ Text Domain: genesis-starter-theme
 Template: genesis
 */
 
-@import "../../vendor/bourbon/app/assets/stylesheets/bourbon";
-@import "../../vendor/neat/app/assets/stylesheets/neat";
+@import '../../vendor/bourbon/app/assets/stylesheets/bourbon';
+@import '../../vendor/neat/app/assets/stylesheets/neat';
 
 @import 'helpers/functions';
 @import 'helpers/variables';
@@ -17,37 +17,37 @@ Template: genesis
 @import 'helpers/mixins';
 @import 'helpers/colours';
 
-/*--------------------------------------------------------------
-Defaults
---------------------------------------------------------------*/
+//--------------------------------------------------------------
+// Defaults
+//--------------------------------------------------------------
 
-@import "defaults/reset";
-@import "defaults/defaults";
-@import "defaults/typography";
+@import 'defaults/reset';
+@import 'defaults/defaults';
+@import 'defaults/typography';
 
-/*--------------------------------------------------------------
-Layout
---------------------------------------------------------------*/
+//--------------------------------------------------------------
+// Layout
+//--------------------------------------------------------------
 
-@import "layout/wrapper";
-@import "layout/header";
-@import "layout/footer";
-@import "layout/sidebar";
+@import 'layout/wrapper';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
 
-/*--------------------------------------------------------------
-Components
---------------------------------------------------------------*/
+//--------------------------------------------------------------
+// Components
+//--------------------------------------------------------------
 
-@import "components/accessibility";
-@import "components/media";
+@import 'components/accessibility';
+@import 'components/media';
 
-/*--------------------------------------------------------------
-Pages
---------------------------------------------------------------*/
+//--------------------------------------------------------------
+// Pages
+// -------------------------------------------------------------
 
-@import "pages/front-page";
-@import "pages/contact";
+@import 'pages/front-page';
+@import 'pages/contact';
 
-/*--------------------------------------------------------------
-Vendor
---------------------------------------------------------------*/
+//--------------------------------------------------------------
+// Vendor
+//--------------------------------------------------------------
