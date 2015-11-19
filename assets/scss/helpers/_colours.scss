@@ -1,7 +1,6 @@
 $colours:
 (
   amber: #ffc107,
-  black: #222,
   blue: #2196f3,
   blue-light: #03a9f4,
   blue-grey: #607d8b,
@@ -19,6 +18,12 @@ $colours:
   purple-deep: #673ab7,
   red: #ff4136,
   teal: #009688,
-  white: #fff,
   yellow: #ffeb3b,
+
+  selection-color: #b3d4fc,
+
+  default-grey: #ccc,
+  default-black: #222,
+  default-white: #fff,
+
 );
