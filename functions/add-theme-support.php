@@ -16,27 +16,27 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.0
  */
-add_theme_support( 'genesis-structural-wraps', array(
+add_theme_support( 'genesis-structural-wraps', [
 	'header',
 	'nav',
 	'subnav',
 	'site-inner',
 	'footer-widgets',
 	'footer',
-) );
+] );
 
 /**
  * Force HTML5
  *
  * @since 1.0
  */
-add_theme_support( 'html5', array( 
+add_theme_support( 'html5', [
 	'comment-list',
 	'comment-form',
 	'search-form',
 	'gallery',
 	'caption',
-) );
+] );
 
 /**
  * Adds <meta> tags for mobile responsiveness.
@@ -57,20 +57,23 @@ add_theme_support( 'custom-background' );
  *
  * @since 1.0
  */
-add_theme_support( 'genesis-custom-header', array( 'width' => 960, 'height' => 100 ) );
+add_theme_support( 'genesis-custom-header', [ 
+	'width' => 960,
+	'height' => 100,
+] );
 
 /**
  * Add Genesis accessiblity support.
  *
  * @since 1.0
  */
-add_theme_support( 'genesis-accessibility', array( 
+add_theme_support( 'genesis-accessibility', [
 	'headings',
 	'drop-down-menu',
 	'search-form',
 	'skip-links',
 	'rems',
-) );
+] );
 
 /**
  * Add Genesis footer widget areas.
