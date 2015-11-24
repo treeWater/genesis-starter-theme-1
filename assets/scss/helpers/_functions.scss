@@ -1,4 +1,4 @@
-@function get-colour($colour) {
+@function palette($colour) {
 
   @if map-has-key($colours, $colour) {
     $colour: map-get($colours, $colour);
