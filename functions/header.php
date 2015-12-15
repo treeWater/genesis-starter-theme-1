@@ -24,23 +24,6 @@ remove_action( 'wp_head', 'wlwmanifest_link' );
 remove_action( 'wp_head', 'feed_links', 2 );
 remove_action( 'wp_head', 'feed_links_extra', 3 );
 
-add_action( 'wp_print_scripts', 'gst_emoji_dequeue_script', PHP_INT_MAX );
-/**
- * Dequeue the Emoji script.
- *
- * @since 1.0
- */
-function gst_emoji_dequeue_script() {
-	wp_dequeue_script( 'emoji' );
-}
-
-/**
- * Remove the emoji styles.
- *
- * @since 1.0
- */
-remove_action( 'wp_print_styles', 'print_emoji_styles' );
-
 /**
  * Remove the site description
  *
