@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 add_action( 'wp_enqueue_scripts', 'gst_load_styles' );
 /**
- * Enqueue webfonts or additional stylesheets
+ * Enqueue web fonts or additional stylesheets
  *
  * @since 1.0
  */
