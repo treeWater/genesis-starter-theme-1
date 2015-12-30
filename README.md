@@ -10,7 +10,7 @@ Clone the repository to your WordPress `/themes/` directory. It won't work strai
 
 ## Theme Functions File
 
-In an effort to move away from a disorganised and length `functions.php`, I've moved theme specific code to a sub folder called `functions` and am using a loader to include these files within my theme. This way, when theme functionality is added, it can be placed in an appropriately named file, and referenced easily. To add or remove a file, simple edit the `$includes` array within `functions.php`.
+In an effort to move away from a disorganised and lengthy `functions.php`, I've moved theme specific code into a sub folder called `functions` and include these files within my theme. This way, when theme functionality is added, it can be placed in an appropriately named file, and referenced easily. To add or remove a file, simple edit the `$includes` array within `functions.php`.
 
 ## Templates / Views
 
