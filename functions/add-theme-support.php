@@ -53,16 +53,6 @@ add_theme_support( 'genesis-responsive-viewport' );
 add_theme_support( 'custom-background' );
 
 /**
- * Add support for a custom header.
- *
- * @since 1.0
- */
-add_theme_support( 'genesis-custom-header', [ 
-	'width' => 960,
-	'height' => 100,
-] );
-
-/**
  * Add Genesis accessiblity support.
  *
  * @since 1.0
