@@ -1,3 +1,0 @@
-[submodule "gulp"]
-	path = gulp
-	url = https://github.com/craigsimps/gulp-build-tasks.git
