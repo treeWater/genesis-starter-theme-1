@@ -11,11 +11,10 @@ Template: genesis
 @import '../../vendor/bourbon/app/assets/stylesheets/bourbon';
 @import '../../vendor/neat/app/assets/stylesheets/neat';
 
-@import 'helpers/functions';
+@import 'helpers/colours';
 @import 'helpers/variables';
 @import 'helpers/breakpoints';
 @import 'helpers/mixins';
-@import 'helpers/colours';
 
 //--------------------------------------------------------------
 // Defaults
