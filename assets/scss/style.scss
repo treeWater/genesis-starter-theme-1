@@ -8,8 +8,8 @@ Text Domain: genesis-starter-theme
 Template: genesis
 */
 
-@import '../../vendor/bourbon/app/assets/stylesheets/bourbon';
-@import '../../vendor/neat/app/assets/stylesheets/neat';
+@import '../vendor/bourbon/app/assets/stylesheets/bourbon';
+@import '../vendor/neat/app/assets/stylesheets/neat';
 
 @import 'helpers/colours';
 @import 'helpers/variables';
