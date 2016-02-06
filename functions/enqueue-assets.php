@@ -30,7 +30,7 @@ add_action( 'wp_enqueue_scripts', 'gst_load_scripts' );
 function gst_load_scripts() {
 
 	wp_dequeue_script( 'comment-reply' );
-	wp_enqueue_script( 'gst-theme', get_stylesheet_directory_uri() . '/js/theme.js', [ 'jquery' ], '1.0.0', true );
+	wp_enqueue_script( 'gst-theme', get_stylesheet_directory_uri() . '/assets/js/theme.js', [ 'jquery' ], '1.0.0', true );
 
 }
 
@@ -42,7 +42,7 @@ add_filter( 'genesis_pre_load_favicon', 'gst_pre_load_favicon' );
  */
 function gst_pre_load_favicon() {
 
-	return get_stylesheet_directory_uri() . '/images/favicon.ico';
+	return get_stylesheet_directory_uri() . '/assets/images/favicon.ico';
 
 }
 
