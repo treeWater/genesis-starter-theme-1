@@ -3,7 +3,7 @@
  * Enqueue Assets.
  *
  * @author Craig Simpson
- * @package genesis-starter-theme
+ * @package Genesis_Starter_Theme
  * @since 1.0
  */
 

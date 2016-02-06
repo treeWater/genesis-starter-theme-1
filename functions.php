@@ -3,7 +3,7 @@
  * Theme functions File, responsible for looping through and loading theme functionality from includes.
  *
  * @author	Craig Simpson
- * @package genesis-starter-theme
+ * @package Genesis_Starter_Theme
  * @since 	1.0
  */
 

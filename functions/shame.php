@@ -2,7 +2,7 @@
 /**
  * Shame. Functions to be sorted.
  * @since 1.0
- * @package genesis-starter-theme
+ * @package Genesis_Starter_Theme
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
