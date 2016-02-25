@@ -2,7 +2,7 @@
 
 This is my starter theme for creating custom websites using the Genesis Framework.
 
-Initial setup uses Bower to load front end dependencies (initially loading only Bourbon and Neat into the /vendor/ directory) and I would typically use Gulp to automate tasks such as compiling SCSS, optimizing images, linting and concatenation scripts, adding languages .pot files, you get the idea. I haven't included the Gulp tasks within the theme, as they're [in another repository](https://github.com/craigsimps/gulp-build-tasks/).
+Initial setup uses Bower to load front end dependencies (initially loading only Bourbon and Neat into the `/develop/vendor/` directory) and I would typically use Gulp to automate tasks such as compiling SCSS, optimizing images, linting and concatenation scripts, adding languages .pot files, you get the idea. I haven't included the Gulp tasks within the theme, as they're [in another repository](https://github.com/craigsimps/gulp-build-tasks/). I will normally set Gulp to output to `/assets/`, with folders for images, JS and fonts.
 
 ## Installation
 
