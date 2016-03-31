@@ -2,8 +2,15 @@
 assets/images/**
 assets/js/**
 
+# Ignore Vendor
+develop/vendor
+
 # Ignore Gulp node_modules (but commit the config).
 gulp/node_modules/**
 
 # Ignore languages as this is built.
 languages/**
+
+# Ignore the stylesheet, and map.
+style.css
+style.css.map
