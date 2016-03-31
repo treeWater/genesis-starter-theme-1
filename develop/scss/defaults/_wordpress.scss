@@ -1,15 +1,17 @@
 .alignleft {
-  display: inline;
-  float: left;
-  margin-right: $small-spacing;
+	display: inline;
+	margin-right: $small-spacing;
+	float: left;
 }
+
 .alignright {
-  display: inline;
-  float: right;
-  margin-left: $small-spacing;
+	display: inline;
+	margin-left: $small-spacing;
+	float: right;
 }
+
 .aligncenter {
-  clear: both;
-  display: block;
-  margin: 0 auto;
+	display: block;
+	margin: 0 auto;
+	clear: both;
 }

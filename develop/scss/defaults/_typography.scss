@@ -1,8 +1,8 @@
 body {
-  color: $base-font-color;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
+	color: $base-font-color;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
 }
 
 h1,
@@ -11,40 +11,40 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $heading-font-family;
-  font-size: $base-font-size;
-  line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
+	margin: 0 0 $small-spacing;
+	font-family: $heading-font-family;
+	font-size: $base-font-size;
+	line-height: $heading-line-height;
 }
 
 p {
-  margin: 0 0 $small-spacing;
+	margin: 0 0 $small-spacing;
 }
 
 a {
-  color: $action-color;
-  text-decoration: none;
-  transition: color $base-duration $base-timing;
+	transition: color $base-duration $base-timing;
+	color: $action-color;
+	text-decoration: none;
 
-  &:active,
-  &:focus,
-  &:hover {
-    color: shade($action-color, 25%);
-  }
+	&:active,
+	&:focus,
+	&:hover {
+		color: shade($action-color, 25%);
+	}
 }
 
 hr {
-  border-bottom: $base-border;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  margin: $base-spacing 0;
+	margin: $base-spacing 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: $base-border;
+	border-left: 0;
 }
 
 img,
 picture {
-  height: auto;
-  margin: 0;
-  max-width: 100%;
-  vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+	margin: 0;
+	vertical-align: middle;
 }

@@ -1,52 +1,52 @@
 .screen-reader-text,
 .screen-reader-text span,
 .screen-reader-shortcut {
-  background: #fff;
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  color: #333;
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-  width: 1px;
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	border: 0;
+	background: $default-white;
+	color: $grey-dark;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
 }
 
 .screen-reader-text:focus,
 .screen-reader-shortcut:focus,
 .genesis-nav-menu .search [type="submit"]:focus,
 .widget_search [type="submit"]:focus {
-  box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
-  clip: auto !important;
-  display: block;
-  font-size: 1em;
-  font-weight: bold;
-  height: auto;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  width: auto;
-  z-index: 100000; // Above WP toolbar.
+	display: block;
+	width: auto;
+	height: auto;
+	padding: 15px 23px 14px;
+	font-size: 1em;
+	font-weight: bold;
+	text-decoration: none;
+	box-shadow: 0 0 2px 2px transparentize($default-black, 0.6);
+	z-index: 100000; // Above WP toolbar.
+	clip: auto !important;
 }
 
 .more-link {
-  position: relative;
+	position: relative;
 }
 
 // Skip Links.
 
 .genesis-skip-link li {
-  height: 0;
-  list-style: none;
-  width: 0;
+	width: 0;
+	height: 0;
+	list-style: none;
 }
 
 // Accessible Menu.
 
 .menu .menu-item:focus {
-  position: static;
+	position: static;
 }
 
-.menu .menu-item > a:focus + ul.sub-menu,
-.menu .menu-item.sfHover > ul.sub-menu {
-  left: auto;
-  opacity: 1;
+.menu .menu-item > a:focus + .sub-menu,
+.menu .menu-item.sfHover > .sub-menu {
+	left: auto;
+	opacity: 1;
 }

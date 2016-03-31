@@ -8,48 +8,48 @@ Text Domain: genesis-starter-theme
 Template: genesis
 */
 
-@import '../vendor/bourbon/app/assets/stylesheets/bourbon';
-@import '../vendor/neat/app/assets/stylesheets/neat';
+@import "../vendor/bourbon/app/assets/stylesheets/bourbon";
+@import "../vendor/neat/app/assets/stylesheets/neat";
 
-@import 'helpers/colours';
-@import 'helpers/variables';
-@import 'helpers/breakpoints';
-@import 'helpers/mixins';
+@import "helpers/colours";
+@import "helpers/variables";
+@import "helpers/breakpoints";
+@import "helpers/mixins";
 
 //--------------------------------------------------------------
 // Defaults
 //--------------------------------------------------------------
 
-@import 'defaults/reset';
-@import 'defaults/buttons';
-@import 'defaults/forms';
-@import 'defaults/lists';
-@import 'defaults/tables';
-@import 'defaults/typography';
+@import "defaults/reset";
+@import "defaults/buttons";
+@import "defaults/forms";
+@import "defaults/lists";
+@import "defaults/tables";
+@import "defaults/typography";
 
 //--------------------------------------------------------------
 // Layout
 //--------------------------------------------------------------
 
-@import 'layout/wrapper';
-@import 'layout/header';
-@import 'layout/navigation';
-@import 'layout/sidebar';
-@import 'layout/footer';
+@import "layout/wrapper";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/sidebar";
+@import "layout/footer";
 
 //--------------------------------------------------------------
 // Components
 //--------------------------------------------------------------
 
-@import 'components/accessibility';
-@import 'components/media';
+@import "components/accessibility";
+@import "components/media";
 
 //--------------------------------------------------------------
 // Pages
 // -------------------------------------------------------------
 
-@import 'pages/front-page';
-@import 'pages/contact';
+@import "pages/front-page";
+@import "pages/contact";
 
 //--------------------------------------------------------------
 // Vendor

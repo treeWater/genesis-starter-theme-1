@@ -1,12 +1,12 @@
 .wrap {
-  @include outer-container;
-  padding: 0 $small-spacing;
+	@include outer-container;
+	padding: 0 $small-spacing;
 
-  @include media($medium-screen) {
-    padding: 0 $base-spacing;
-  }
+	@include media($medium-screen) {
+		padding: 0 $base-spacing;
+	}
 
-  @include media($very-large-screen) {
-    padding: 0;
-  }
+	@include media($very-large-screen) {
+		padding: 0;
+	}
 }

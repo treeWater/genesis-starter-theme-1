@@ -1,28 +1,11 @@
-$colours:
-(
+$default-grey: #ccc;
+$default-black: #222;
+$default-white: #fff;
 
-  brand-primary: #1565c0,
+$brand-primary: #1565c0;
 
-  grey-dark: #333,
-  grey-medium: #999,
-  grey-light: #ddd,
+$grey-dark: #333;
+$grey-medium: #999;
+$grey-light: #ddd;
 
-  selection-color: #b3d4fc,
-
-  default-grey: #ccc,
-  default-black: #222,
-  default-white: #fff,
-
-);
-
-@function palette($colour) {
-
-  @if map-has-key($colours, $colour) {
-    $colour: map-get($colours, $colour);
-  } @else {
-    @if type-of($colour) != colour {
-      @error "Colour name: `#{$colour}` not found.";
-    }
-  }
-  @return $colour;
-}
+$selection-color: #b3d4fc;
