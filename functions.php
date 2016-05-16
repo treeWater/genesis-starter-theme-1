@@ -16,7 +16,6 @@ add_action( 'genesis_setup', 'genesis_starter_theme_setup', 15 );
  * After Genesis has finished loading, load up child theme files.
  *
  * @since 1.0.0
- * @throws \Exception If file can't be found.
  */
 function genesis_starter_theme_setup() {
 
