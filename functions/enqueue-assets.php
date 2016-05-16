@@ -26,7 +26,7 @@ add_action( 'wp_enqueue_scripts', 'gst_load_scripts' );
  * Enqueue scripts in the footer
  *
  * @since 1.0
-*/
+ */
 function gst_load_scripts() {
 
 	wp_dequeue_script( 'comment-reply' );
@@ -44,17 +44,4 @@ function gst_pre_load_favicon() {
 
 	return get_stylesheet_directory_uri() . '/assets/images/favicon.ico';
 
-}
-
-add_filter( 'wp_default_scripts', 'gst_remove_jquery_migrate' );
-/**
- * Remove jQuery Migrate.
- * @param  array &$scripts Array of default scripts loaded.
- * @return array           Modified array of default scripts loaded.
- */
-function gst_remove_jquery_migrate( &$scripts ) {
-    if ( ! is_admin() ) {
-        $scripts->remove( 'jquery' );
-        $scripts->add( 'jquery', false, [ 'jquery-core' ] , '1.10.2' );
-    }
 }
