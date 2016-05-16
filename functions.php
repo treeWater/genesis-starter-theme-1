@@ -24,7 +24,7 @@ function genesis_starter_theme_setup() {
 
 	define( 'CHILD_THEME_NAME', 'Genesis Starter Theme' );
 	define( 'CHILD_THEME_URL', 'http://github.com/craigsimps/genesis-starter-theme' );
-	define( 'CHILD_THEME_VIEWS', get_stylesheet_directory() . '/templates/views/' );
+	define( 'CHILD_THEME_VERSION', '1.0.0' );
 
 	/**
 	 * Configure theme support.
