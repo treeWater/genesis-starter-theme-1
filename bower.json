@@ -2,7 +2,5 @@
 	"name": "genesis-starter-theme",
 	"version": "1.0.0",
 	"dependencies": {
-	    "bourbon": ">=4.2.4",
-	    "neat": ">=1.7.2"
 	}
 }
