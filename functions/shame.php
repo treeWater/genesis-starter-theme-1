@@ -1,7 +1,8 @@
 <?php
 /**
  * Shame. Functions to be sorted.
- * @since 1.0
+ *
+ * @since   1.0
  * @package Genesis_Starter_Theme
  */
 

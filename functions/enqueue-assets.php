@@ -2,9 +2,9 @@
 /**
  * Enqueue Assets.
  *
- * @author Craig Simpson
+ * @author  Craig Simpson
  * @package Genesis_Starter_Theme
- * @since 1.0
+ * @since   1.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
