@@ -26,19 +26,32 @@ function genesis_starter_theme_setup() {
 	define( 'CHILD_THEME_URL', 'http://github.com/craigsimps/genesis-starter-theme' );
 	define( 'CHILD_THEME_VIEWS', get_stylesheet_directory() . '/templates/views/' );
 
-	$includes = [
-		'functions/add-theme-support.php',
-		'functions/enqueue-assets.php',
-		'functions/header.php',
-		'functions/shame.php',
-	];
+	/**
+	 * Configure theme support.
+	 *
+	 * @since 1.0.0
+	 */
+	require_once 'functions/add-theme-support.php';
 
-	array_walk( $includes, function ( $include ) {
-		if ( ! $include_path = locate_template( $include ) ) {
-			throw new \Exception( sprintf( __( 'Error locating %s for inclusion', 'genesis-starter-theme' ), $include ) );
-		}
+	/**
+	 * Enqueue assets.
+	 *
+	 * @since 1.0.0
+	 */
+	require_once 'functions/enqueue-assets.php';
 
-		require_once $include_path;
-	} );
+	/**
+	 * Header customisations
+	 *
+	 * @since 1.0.0
+	 */
+	require_once 'functions/header.php';
+
+	/**
+	 * Shame. Code not yet sorted.
+	 *
+	 * @since 1.0.0
+	 */
+	require_once 'functions/shame.php';
 
 }
