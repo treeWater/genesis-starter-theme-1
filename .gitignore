@@ -1,6 +1,7 @@
 # Ignore images and js within /assets/ as the contents of these are built from /develop/.
 assets/images/**
 assets/js/**
+assets/vendor/**
 
 # Ignore Vendor
 develop/vendor
