@@ -40,7 +40,7 @@ function genesis_starter_theme_setup() {
 	require_once 'functions/enqueue-assets.php';
 
 	/**
-	 * Header customisations
+	 * Header customisations.
 	 *
 	 * @since 1.0.0
 	 */
