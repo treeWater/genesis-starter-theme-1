@@ -1,17 +1,19 @@
-#Genesis Starter Reloaded
+#Genesis Starter Theme
 
-This is my starter theme for creating custom websites using the Genesis Framework.
+This is my starter theme for creating custom websites using the Genesis Framework, using [Bourbon](http://bourbon.io/) and [Neat](http://neat.bourbon.io). It is intentionally minimal, there are only very basic styling cues included, taken from [Bourbon Bitters](http://bitters.bourbon.io/). 
 
-Initial setup uses Bower to load front end dependencies (initially loading only Bourbon and Neat into the `/develop/vendor/` directory) and I would typically use Gulp to automate tasks such as compiling SCSS, optimizing images, linting and concatenation scripts, adding languages .pot files, you get the idea. I haven't included the Gulp tasks within the theme, as they're [in another repository](https://github.com/craigsimps/gulp-build-tasks/). I will normally set Gulp to output to `/assets/`, with folders for images, JS and fonts.
+Alongside my starter theme, I make heavy use of Gulp and have created a set of theme tasks which I use on every custom build. These Gulp tasks help to automate tasks such as compiling SCSS, optimizing images, linting and concatenation scripts, adding languages .pot files. They are available [in a separate repository](https://github.com/craigsimps/gulp-build-tasks/).
+
+My theme is structured with a `/develop/` directory which houses uncompressed images, SCSS files and uncompiled JS. Gulp will then compile these files and output them to the `/assets/` directory.
+
+## Theme Functions File
+
+In an effort to move away from a disorganised and lengthy `functions.php`, I've moved theme specific code into a sub folder called `functions` and include these files within my theme. This way, when theme functionality is added, it can be placed in an appropriately named file, and referenced easily.
+
+## Templates / Views
+
+Custom page templates will be held within the `templates` folder. I will also typically abstract out markup (such as single entries from a custom loop) into small files held within the `/views/` folder.
 
 ## Installation
 
 Clone the repository to your WordPress `/themes/` directory. It won't work straight out of the box, because there's no compiled stylesheet held within the repository. You'll need to hook up your preferred task runner and output everything in `/develop/` to the theme root and `/assets/` directory. [I use Gulp for this](https://github.com/craigsimps/gulp-build-tasks/).
-
-## Theme Functions File
-
-In an effort to move away from a disorganised and lengthy `functions.php`, I've moved theme specific code into a sub folder called `functions` and include these files within my theme. This way, when theme functionality is added, it can be placed in an appropriately named file, and referenced easily. To add or remove a file, simple edit the `$includes` array within `functions.php`.
-
-## Templates / Views
-
-Custom page templates will be held within the `templates` folder. I will also typically abstract out markup (such as single entries from a custom loop) into small files held within the `/templates/views/` folder. In order to reference these files easily I have defined a `CHILD_THEME_VIEWS` constant within the theme `functions.php` file, which can be used like: `include CHILD_THEME_VIEWS . 'filename.php'` within templates.
