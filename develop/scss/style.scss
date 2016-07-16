@@ -21,11 +21,16 @@ Template: genesis
 		"helpers/mixins";
 
 //--------------------------------------------------------------
+// Normalize
+//--------------------------------------------------------------
+
+@import "normalize";
+
+//--------------------------------------------------------------
 // Defaults
 //--------------------------------------------------------------
 
-@import "defaults/reset",
-		"defaults/buttons",
+@import "defaults/buttons",
 		"defaults/forms",
 		"defaults/lists",
 		"defaults/tables",
