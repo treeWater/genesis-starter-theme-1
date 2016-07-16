@@ -18,8 +18,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 add_theme_support( 'genesis-structural-wraps', [
 	'header',
-	'nav',
-	'subnav',
+	'menu-primary',
+	'menu-secondary',
 	'site-inner',
 	'footer-widgets',
 	'footer',
