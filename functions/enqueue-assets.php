@@ -19,7 +19,6 @@ add_action( 'wp_enqueue_scripts', 'gst_load_styles' );
  */
 function gst_load_styles() {
 	wp_enqueue_style( 'fonts', '//fonts.googleapis.com/css?family=Lato:300,400,700' );
-	//wp_enqueue_style( 'vendor-styles', get_stylesheet_directory_uri() . '/assets/vendor/vendor.min.css', [], CHILD_THEME_VERSION );
 }
 
 add_action( 'wp_enqueue_scripts', 'gst_load_scripts' );
@@ -31,7 +30,6 @@ add_action( 'wp_enqueue_scripts', 'gst_load_scripts' );
 function gst_load_scripts() {
 
 	wp_dequeue_script( 'comment-reply' );
-	//wp_enqueue_script( 'vendor-scripts', get_stylesheet_directory_uri() . '/assets/vendor/vendor.min.js', [ 'jquery' ], CHILD_THEME_VERSION, true );
 	wp_enqueue_script( 'gst-theme', get_stylesheet_directory_uri() . '/assets/js/theme.js', [ 'jquery' ], CHILD_THEME_VERSION, true );
 
 }
