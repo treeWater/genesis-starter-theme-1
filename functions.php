@@ -19,11 +19,14 @@ add_action( 'genesis_setup', 'genesis_starter_theme_setup', 15 );
  */
 function genesis_starter_theme_setup() {
 
-	load_child_theme_textdomain( 'genesis-starter-theme', get_stylesheet_directory() . '/languages' );
+	$child_theme = wp_get_theme();
 
-	define( 'CHILD_THEME_NAME', 'Genesis Starter Theme' );
-	define( 'CHILD_THEME_URL', 'http://github.com/craigsimps/genesis-starter-theme' );
-	define( 'CHILD_THEME_VERSION', '1.0.0' );
+	define( 'CHILD_THEME_NAME', $child_theme->get( 'Name' ) );
+	define( 'CHILD_THEME_URL', $child_theme->get( 'ThemURI' ) );
+	define( 'CHILD_THEME_VERSION', $child_theme->get( 'Version' ) );
+	define( 'CHILD_THEME_TEXT_DOMAIN', $child_theme->get( 'Text Domain' ) );
+
+	load_child_theme_textdomain( CHILD_THEME_TEXT_DOMAIN, get_stylesheet_directory() . '/languages' );
 
 	/**
 	 * Configure theme support.
