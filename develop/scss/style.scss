@@ -16,9 +16,9 @@ Template: genesis
 //--------------------------------------------------------------
 
 @import "helpers/colours",
-		"helpers/variables",
-		"helpers/breakpoints",
-		"helpers/mixins";
+        "helpers/variables",
+        "helpers/breakpoints",
+        "helpers/mixins";
 
 //--------------------------------------------------------------
 // Normalize
@@ -30,36 +30,40 @@ Template: genesis
 // Defaults
 //--------------------------------------------------------------
 
-@import "defaults/buttons",
-		"defaults/forms",
-		"defaults/lists",
-		"defaults/tables",
-		"defaults/typography",
-		"defaults/wordpress";
+@import "base/buttons",
+        "base/forms",
+        "base/lists",
+        "base/tables",
+        "base/typography",
+        "base/wordpress";
 
 //--------------------------------------------------------------
 // Layout
 //--------------------------------------------------------------
 
 @import "layout/wrapper",
-		"layout/header",
-		"layout/navigation",
-		"layout/sidebar",
-		"layout/footer";
+        "layout/header",
+        "layout/navigation",
+        "layout/sidebar",
+        "layout/footer";
+
+//--------------------------------------------------------------
+// Modules
+//--------------------------------------------------------------
 
 //--------------------------------------------------------------
 // Components
 //--------------------------------------------------------------
 
 @import "components/accessibility",
-		"components/media";
+        "components/media";
 
 //--------------------------------------------------------------
 // Pages
 // -------------------------------------------------------------
 
 @import "pages/front-page",
-		"pages/contact";
+        "pages/contact";
 
 //--------------------------------------------------------------
 // Vendor
