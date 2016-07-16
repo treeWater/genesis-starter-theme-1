@@ -25,6 +25,7 @@ function genesis_starter_theme_setup() {
 	define( 'CHILD_THEME_URL', $child_theme->get( 'ThemURI' ) );
 	define( 'CHILD_THEME_VERSION', $child_theme->get( 'Version' ) );
 	define( 'CHILD_THEME_TEXT_DOMAIN', $child_theme->get( 'Text Domain' ) );
+	define( 'CHILD_THEME_DIRECTORY', get_stylesheet_directory_url() );
 
 	load_child_theme_textdomain( CHILD_THEME_TEXT_DOMAIN, get_stylesheet_directory() . '/languages' );
 
