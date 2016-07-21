@@ -3,9 +3,11 @@
  * Header tweaks.
  *
  * @author  Craig Simpson
- * @package Genesis_Starter_Theme
+ * @package Project\Theme
  * @since   1.0.0
  */
+
+namespace Project\Theme;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -18,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
 
-//add_filter( 'genesis_seo_title', 'gst_header_inline_logo', 10, 3 );
+//add_filter( 'genesis_seo_title', __NAMESPACE__ . '\header_inline_logo', 10, 3 );
 /**
  * Inline logo file
  *

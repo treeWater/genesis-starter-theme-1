@@ -3,9 +3,11 @@
  * Genesis settings.
  *
  * @author  Craig Simpson
- * @package Genesis_Starter_Theme
+ * @package Project\Theme
  * @since   1.0.0
  */
+
+namespace Project\Theme;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
