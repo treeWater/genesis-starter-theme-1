@@ -1,6 +1,6 @@
 {
   "directory": "develop/vendor",
-  "analytics": false
+  "analytics": false,
   "ignoredDependencies": [
     "jquery"
   ]
