@@ -2,5 +2,8 @@
 	"name": "genesis-starter-theme",
 	"version": "1.0.0",
 	"dependencies": {
+	},
+	"devDependencies": {
+		"Cortana": "^1.2.9"
 	}
 }
