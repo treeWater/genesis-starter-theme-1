@@ -26,7 +26,7 @@ remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
  *
  * @since 1.0
  */
-function gst_header_inline_logo() {
+function header_inline_logo() {
 	$logo = '<img src="' . esc_url( CHILD_THEME_DIRECTORY . '/assets/images/logo.png' ) . '" alt="' . esc_attr( get_bloginfo( 'name' ) ) . ' Homepage" width="800" height="84" />';
 	$inside = sprintf( '<a href="%s">%s<span class="screen-reader-text">%s</span></a>', trailingslashit( home_url() ), $logo, get_bloginfo( 'name' ) );
 	$wrap = genesis_is_root_page() && 'title' === genesis_get_seo_option( 'home_h1_on' ) ? 'h1' : 'p';
