@@ -4,9 +4,9 @@
  *
  * Loads our custom functions, assets and theme customizations.
  *
- * @author    Craig Simpson
+ * @author  Craig Simpson
  * @since   1.0.0
- * @package   Project\Theme
+ * @package Project\Theme
  */
 
 namespace Project\Theme;
