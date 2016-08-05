@@ -19,6 +19,6 @@ add_filter('embed_oembed_html', __NAMESPACE__ . '\embed_wrap');
  *
  * @since 1.0.0
  */
-function embed_wrap($cache) {
+function embed_wrap( $cache ) {
 	return '<div class="entry-content-asset">' . $cache . '</div>';
 }
