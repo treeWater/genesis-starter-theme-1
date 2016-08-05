@@ -1,4 +1,4 @@
-var genesis_starter_theme = (function( $ ) {
+var gst = (function( $ ) {
 	'use strict';
 
 	/**
@@ -19,8 +19,8 @@ var genesis_starter_theme = (function( $ ) {
 		functionName();
 
     // Examples binding to events.
-		$( window ).on( 'resize.genesis_starter_theme', functionName );
-		$( window ).on( 'scroll.genesis_starter_theme resize.genesis_starter_theme', functionName );
+		$( window ).on( 'resize.gst', functionName );
+		$( window ).on( 'scroll.gst resize.gst', functionName );
 	};
 
 	// Only expose the ready function to the world
@@ -30,4 +30,4 @@ var genesis_starter_theme = (function( $ ) {
 
 })( jQuery );
 
-jQuery( genesis_starter_theme.ready );
+jQuery( gst.ready );
