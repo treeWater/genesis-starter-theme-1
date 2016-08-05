@@ -1,33 +1,38 @@
-var gst = (function( $ ) {
-	'use strict';
+var gst = (function ($) {
+    'use strict';
 
-	/**
-	 * Empty placholder function.
-	 *
-	 * @since 1.0.0
-	 */
-	var functionName = function() {
-		// Empty function, do all the things.
-	},
+    /**
+     * Empty placholder function.
+     *
+     * @since 1.0.0
+     */
+    var functionName = function () {
+            // Empty function, do all the things.
+        },
 
-	/**
-	 * Fire events on document ready, and bind other events.
-	 *
-	 * @since 1.0.0
-	 */
-	ready = function() {
-		functionName();
+        /**
+         * Fire events on document ready, and bind other events.
+         *
+         * @since 1.0.0
+         */
+        ready = function () {
+            functionName();
 
-    // Examples binding to events.
-		$( window ).on( 'resize.gst', functionName );
-		$( window ).on( 'scroll.gst resize.gst', functionName );
-	};
+            priorityNav.init({
+                mainNavWrapper: ".nav-primary .wrap",
+                mainNav: ".menu-primary"
+            });
 
-	// Only expose the ready function to the world
-	return {
-		ready: ready
-	};
+            // Examples binding to events.
+            $(window).on('resize.gst', functionName);
+            $(window).on('scroll.gst resize.gst', functionName);
+        };
 
-})( jQuery );
+    // Only expose the ready function to the world
+    return {
+        ready: ready
+    };
 
-jQuery( gst.ready );
+})(jQuery);
+
+jQuery(gst.ready);
