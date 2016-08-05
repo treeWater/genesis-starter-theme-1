@@ -25,7 +25,7 @@ function load_scripts_styles() {
 	/**
 	 * Load Bower components, concatenated to vendor files.
 	 */
-	wp_enqueue_style( 'vendor', CHILD_THEME_URI . '/vendor/vendor.css' );
+	wp_enqueue_style( 'vendor', CHILD_THEME_URI . '/vendor/vendor' . $suffix . '.css' );
 	wp_register_script( 'vendor', CHILD_THEME_URI . '/vendor/vendor' . $suffix . '.js', [ ], CHILD_THEME_VERSION, true );
 
 	/**
