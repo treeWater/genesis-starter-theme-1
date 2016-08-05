@@ -4,10 +4,9 @@
  *
  * Loads our custom functions, assets and theme customizations.
  *
- * @package   Project\Theme
  * @author    Craig Simpson
- * @license   GPL-2.0+
- * @copyright 2016 Gamajo Tech
+ * @since   1.0.0
+ * @package   Project\Theme
  */
 
 namespace Project\Theme;
