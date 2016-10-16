@@ -1,6 +1,5 @@
 {
 	"name": "genesis-starter-theme",
-	"version": "1.0.0",
 	"dependencies": {
 		"priority-nav": "priority-nav.js#^1.0.12"
 	},
