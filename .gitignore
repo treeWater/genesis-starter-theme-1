@@ -7,8 +7,8 @@ vendor/**
 # Ignore Vendor
 develop/vendor
 
-# Ignore Gulp node_modules (but commit the config).
-gulp/node_modules/**
+# Ignore node_modules.
+node_modules/**
 
 # Ignore the stylesheet, and map.
 style.css

@@ -1,0 +1,14 @@
+{
+  "name": "genesis-starter-theme",
+  "homepage": "https://craigsimpson.scot/",
+  "version": "1.0.0",
+  "author": "Craig Simpson <craig@craigsimpson.scot>",
+  "description": "This is my starter theme for creating custom websites using the Genesis Framework.",
+  "repository": "https://github.com/craigsimps/genesis-starter-theme.git",
+  "license": "GPL-2.0",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-wp-toolkit": "craigsimps/gulp-wp-toolkit"
+  }
+}
