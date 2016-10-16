@@ -155,9 +155,9 @@ class Setup {
 		}
 
 		if ( ! empty( $config['register'] ) ) {
-			array_walk( $config['register'], function ( $sidebar, $id ) {
+			array_walk( $config['register'], function ( $sidebar, $sidebar_id ) {
 				genesis_register_sidebar( [
-					'id'          => $id,
+					'id'          => $sidebar_id,
 					'name'        => $sidebar['name'],
 					'description' => $sidebar['description'],
 				] );
