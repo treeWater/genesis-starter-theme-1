@@ -1,7 +1,6 @@
 {
 	"name": "genesis-starter-theme",
 	"dependencies": {
-		"priority-nav": "priority-nav.js#^1.0.12"
 	},
 	"devDependencies": {
 		"Cortana": "^1.2.9"

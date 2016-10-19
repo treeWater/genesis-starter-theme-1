@@ -18,11 +18,6 @@ var gst = (function ($) {
         ready = function () {
             functionName();
 
-            priorityNav.init({
-                mainNavWrapper: ".nav-primary .wrap",
-                mainNav: ".menu-primary"
-            });
-
             // Examples binding to events.
             $(window).on('resize.gst', functionName);
             $(window).on('scroll.gst resize.gst', functionName);
