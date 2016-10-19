@@ -1,14 +1,14 @@
 fieldset {
+	background-color: transparent;
+	border: 0;
 	margin: 0;
 	padding: 0;
-	border: 0;
-	background-color: transparent;
 }
 
 legend {
+	font-weight: 600;
 	margin-bottom: $small-spacing / 2;
 	padding: 0;
-	font-weight: 600;
 }
 
 input,
@@ -20,8 +20,8 @@ select {
 }
 
 label {
-	margin-bottom: $small-spacing / 2;
 	font-weight: 600;
+	margin-bottom: $small-spacing / 2;
 
 	&.required::after {
 		content: "*";
@@ -34,17 +34,17 @@ label {
 
 #{$all-text-inputs},
 select[multiple=multiple] {
-	width: 100%;
+	background-color: $base-background-color;
+	border: $base-border;
+	border-radius: $base-border-radius;
+	box-shadow: $form-box-shadow;
+	box-sizing: border-box;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
 	margin-bottom: $small-spacing;
 	padding: $base-spacing / 3;
 	transition: border-color $base-duration $base-timing;
-	border: $base-border;
-	border-radius: $base-border-radius;
-	background-color: $base-background-color;
-	font-family: $base-font-family;
-	font-size: $base-font-size;
-	box-shadow: $form-box-shadow;
-	box-sizing: border-box;
+	width: 100%;
 
 	&:hover {
 		border-color: shade($base-border-color, 20%);
@@ -52,8 +52,8 @@ select[multiple=multiple] {
 
 	&:focus {
 		border-color: $action-color;
-		outline: none;
 		box-shadow: $form-box-shadow-focus;
+		outline: none;
 	}
 
 	&:disabled {
@@ -85,12 +85,12 @@ textarea {
 }
 
 [type="file"] {
-	width: 100%;
 	margin-bottom: $small-spacing;
+	width: 100%;
 }
 
 select {
-	width: auto;
-	max-width: 100%;
 	margin-bottom: $base-spacing;
+	max-width: 100%;
+	width: auto;
 }
