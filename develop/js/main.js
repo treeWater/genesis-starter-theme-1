@@ -2,7 +2,7 @@ var gst = (function ($) {
     'use strict';
 
     /**
-     * Empty placholder function.
+     * Empty placeholder function.
      *
      * @since 1.0.0
      */
