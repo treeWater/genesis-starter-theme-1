@@ -22,6 +22,7 @@ function load_theme_components() {
     $file_names = [
         'components/assets.php',
         'components/header.php',
+        'components/js-no-js.php',
         'components/oembed.php',
         'components/shame.php',
     ];
