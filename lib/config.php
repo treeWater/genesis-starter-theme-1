@@ -83,7 +83,6 @@ return [
 
 		'sidebars' => [
 			'unregister' => [
-				'header-right',
 			],
 		],
 	],

@@ -13,6 +13,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+add_action( 'genesis_before_header', __NAMESPACE__ . '\maybe_move_primary_nav' );
+/**
+ * Maybe move the primary navigation to the header (if no widget in header-right).
+ */
+function maybe_move_primary_nav() {
+	if ( is_active_sidebar( 'header-right' ) ) {
+		return;
+	}
+	remove_action( 'genesis_after_header', 'genesis_do_nav' );
+	add_action( 'genesis_header', 'genesis_do_nav', 11 );
+}
+
 /**
  * Remove the site description
  *
