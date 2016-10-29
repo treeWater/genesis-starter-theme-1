@@ -24,6 +24,7 @@ function load_theme_components() {
         'components/cleanup.php',
         'components/header.php',
         'components/js-no-js.php',
+        'components/navigation.php',
         'components/oembed.php',
         'components/shame.php',
     ];
