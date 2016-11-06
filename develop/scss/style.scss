@@ -5,10 +5,10 @@
 // Variables & Helpers
 //--------------------------------------------------------------
 
-@import "helpers/colours",
-        "helpers/variables",
-        "helpers/breakpoints",
-        "helpers/mixins";
+@import "helpers/colours";
+@import "helpers/variables";
+@import "helpers/breakpoints";
+@import "helpers/mixins";
 
 //--------------------------------------------------------------
 // Normalize
@@ -20,22 +20,22 @@
 // Defaults
 //--------------------------------------------------------------
 
-@import "base/buttons",
-        "base/forms",
-        "base/lists",
-        "base/tables",
-        "base/typography",
-        "base/wordpress";
+@import "base/buttons";
+@import "base/forms";
+@import "base/lists";
+@import "base/tables";
+@import "base/typography";
+@import "base/wordpress";
 
 //--------------------------------------------------------------
 // Layout
 //--------------------------------------------------------------
 
-@import "layout/wrapper",
-        "layout/header",
-        "layout/navigation",
-        "layout/sidebar",
-        "layout/footer";
+@import "layout/wrapper";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/sidebar";
+@import "layout/footer";
 
 //--------------------------------------------------------------
 // Modules
@@ -45,16 +45,16 @@
 // Components
 //--------------------------------------------------------------
 
-@import "components/accessibility",
-        "components/media",
-        "components/search";
+@import "components/accessibility";
+@import "components/media";
+@import "components/search";
 
 //--------------------------------------------------------------
 // Pages
 // -------------------------------------------------------------
 
-@import "pages/front-page",
-        "pages/contact";
+@import "pages/front-page";
+@import "pages/contact";
 
 //--------------------------------------------------------------
 // Vendor
