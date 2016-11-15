@@ -6,7 +6,7 @@ This is my starter theme for creating custom websites using the Genesis Framewor
 
 Alongside my starter theme, I make heavy use of Gulp and have created a set of theme tasks which I use on every custom build. These Gulp tasks help to automate tasks such as compiling SCSS, optimizing images, linting and concatenation scripts, adding languages .pot files.
 
-They are available as a standalone package, [`gulp-wp-toolkit`](https://github.com/craigsimps/wp-gulp-toolkit/) and are used within this theme.
+They are available as a standalone package, [`gulp-wp-toolkit`](https://github.com/craigsimps/gulp-wp-toolkit/) and are used within this theme.
 
 
 ## Structure 
@@ -21,4 +21,4 @@ Custom page templates will be held within the `templates` folder. I will also ty
 
 Clone the repository to your WordPress `/themes/` directory. It won't work straight out of the box, because there's no compiled stylesheet held within the repository - run `npm install`, and then `gulp build` to get started.
 
-From there, run `gulp build` or optionally `gulp serve` (if you want to see changes happen instantly in your browser using Browser Sync) and build a custom theme. More information about the available Gulp tasks can be found within the [`gulp-wp-toolkit`](https://github.com/craigsimps/wp-gulp-toolkit/) repository.
+From there, run `gulp build` or optionally `gulp serve` (if you want to see changes happen instantly in your browser using Browser Sync) and build a custom theme. More information about the available Gulp tasks can be found within the [`gulp-wp-toolkit`](https://github.com/craigsimps/gulp-wp-toolkit/) repository.
