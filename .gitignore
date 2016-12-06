@@ -1,14 +1,14 @@
 # Ignore folders with output which is built.
-images/**
-js/**
-languages/**
-vendor/**
+images/
+js/
+languages/
+vendor/
 
 # Ignore Vendor
-develop/vendor
+develop/vendor/
 
 # Ignore node_modules.
-node_modules/**
+node_modules/
 
 # Ignore the stylesheet, and map.
 style.css
