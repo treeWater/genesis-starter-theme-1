@@ -1,0 +1,51 @@
+//--------------------------------------------------------------
+// Layout
+//--------------------------------------------------------------
+$base-container-width: 940px;
+$base-default-percentage-padding: 5%;
+
+/* Breakpoints */
+$screen--xs: new-breakpoint(360px);
+$screen--s: new-breakpoint(480px);
+$screen--m: new-breakpoint(768px);
+$screen--l: new-breakpoint(1024px);
+$screen--xl: new-breakpoint(1140px);
+
+//--------------------------------------------------------------
+// Spacing | Private variables, do not use outside this file.
+//--------------------------------------------------------------
+$_spacing: $base-font-size * $base-line-height;
+$_spacing--xxl: floor($_spacing * 6);
+$_spacing--xl: floor($_spacing * 4);
+$_spacing--l: floor($_spacing * 2);
+$_spacing--m: $_spacing;
+$_spacing--s: floor($_spacing / 2);
+$_spacing--xs: floor($_spacing / 4);
+$_spacing--xxs: floor($_spacing / 6);
+
+//--------------------------------------------------------------
+// Spacing Usage
+//--------------------------------------------------------------
+
+/* Typography */
+$heading-bottom-margin: $_spacing--s;
+$paragraph-bottom-margin: $_spacing--m;
+
+/* Buttons */
+$button-padding: $_spacing--s $_spacing--m;
+
+/* HR */
+$hr-margin: $_spacing--m 0;
+
+/* Forms */
+$form-input-padding: $_spacing--xs;
+$form-input-margin-bottom: $_spacing--s;
+$form-label-margin-bottom: $_spacing--xs;
+$form-select-margin-bottom: $_spacing--s;
+$form-radio-margin-right: $_spacing--xs;
+$form-file-margin-bottom: $_spacing--s;
+
+/* Tables */
+$table-margin: $_spacing--s 0;
+$table-th-padding: $_spacing--s 0;
+$table-td-padding: $table-th-padding;

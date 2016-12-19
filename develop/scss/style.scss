@@ -2,13 +2,13 @@
 @import "neat";
 
 //--------------------------------------------------------------
-// Variables & Helpers
+// Variables
 //--------------------------------------------------------------
 
-@import "helpers/colours";
-@import "helpers/variables";
-@import "helpers/breakpoints";
-@import "helpers/mixins";
+@import "variables/colors";
+@import "variables/typography";
+@import "variables/layout";
+@import "variables/z-index";
 
 //--------------------------------------------------------------
 // Normalize
@@ -20,12 +20,15 @@
 // Defaults
 //--------------------------------------------------------------
 
-@import "base/buttons";
+@import "base/layout";
+@import "base/typography";
+@import "base/headings";
 @import "base/forms";
+@import "base/buttons";
 @import "base/lists";
 @import "base/tables";
-@import "base/typography";
-@import "base/wordpress";
+@import "base/media";
+@import "base/accessibility";
 
 //--------------------------------------------------------------
 // Layout
@@ -38,24 +41,7 @@
 @import "layout/footer";
 
 //--------------------------------------------------------------
-// Modules
-//--------------------------------------------------------------
-
-//--------------------------------------------------------------
 // Components
 //--------------------------------------------------------------
 
-@import "components/accessibility";
-@import "components/media";
 @import "components/search";
-
-//--------------------------------------------------------------
-// Pages
-// -------------------------------------------------------------
-
-@import "pages/front-page";
-@import "pages/contact";
-
-//--------------------------------------------------------------
-// Vendor
-//--------------------------------------------------------------

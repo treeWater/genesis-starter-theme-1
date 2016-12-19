@@ -1,27 +1,27 @@
-.button,
 #{$all-buttons} {
 	appearance: none;
-	background-color: $action-color;
+	background-color: $button-background;
 	border: 0;
-	border-radius: $base-border-radius;
-	color: $default-white;
+	border-radius: $border-radius;
+	color: $button-color;
 	cursor: pointer;
 	display: inline-block;
 	font-family: $base-font-family;
 	font-size: $base-font-size;
-	font-weight: 600;
+	-webkit-font-smoothing: antialiased;
+	font-weight: $base-font-weight--bold;
 	line-height: 1;
-	padding: $small-spacing $base-spacing;
+	padding: $button-padding;
+	text-align: center;
 	text-decoration: none;
-	transition: background-color $base-duration $base-timing;
 	user-select: none;
 	vertical-align: middle;
 	white-space: nowrap;
 
 	&:hover,
 	&:focus {
-		background-color: shade($action-color, 20%);
-		color: $default-white;
+		background-color: $button-background--hover;
+		color: $button-color--hover;
 	}
 
 	&:disabled {
@@ -29,7 +29,7 @@
 		opacity: 0.5;
 
 		&:hover {
-			background-color: $action-color;
+			background-color: $button-background--hover;
 		}
 	}
 }

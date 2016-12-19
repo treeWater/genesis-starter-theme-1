@@ -1,3 +1,46 @@
+input,
+select,
+textarea {
+	display: block;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+}
+
+#{$all-text-inputs} {
+	appearance: none;
+	background-color: $form-input-background-color;
+	border: $form-border;
+	border-radius: $form-border-radius;
+	box-shadow: $form-box-shadow;
+	box-sizing: border-box;
+	margin-bottom: $form-input-margin-bottom;
+	padding: $form-input-padding;
+	width: 100%;
+
+	&:hover {
+		border-color: $form-border-color--hover;
+	}
+
+	&:focus {
+		border-color: $form-border-color--focus;
+		box-shadow: $form-box-shadow-focus;
+		outline: none;
+	}
+
+	&:disabled {
+		background-color: $form-border-color--disabled;
+		cursor: not-allowed;
+
+		&:hover {
+			border: $form-border;
+		}
+	}
+
+	&::placeholder {
+		color: $form-placeholder-color;
+	}
+}
+
 fieldset {
 	background-color: transparent;
 	border: 0;
@@ -5,92 +48,29 @@ fieldset {
 	padding: 0;
 }
 
-legend {
-	font-weight: 600;
-	margin-bottom: $small-spacing / 2;
-	padding: 0;
-}
-
-input,
 label,
-select {
+legend {
 	display: block;
-	font-family: $base-font-family;
-	font-size: $base-font-size;
+	font-weight: $base-font-weight--bold;
+	margin-bottom: $form-label-margin-bottom;
 }
 
-label {
-	font-weight: 600;
-	margin-bottom: $small-spacing / 2;
-
-	&.required::after {
-		content: "*";
-	}
-
-	abbr {
-		display: none;
-	}
-}
-
-#{$all-text-inputs},
-select[multiple=multiple] {
-	background-color: $base-background-color;
-	border: $base-border;
-	border-radius: $base-border-radius;
-	box-shadow: $form-box-shadow;
-	box-sizing: border-box;
-	font-family: $base-font-family;
-	font-size: $base-font-size;
-	margin-bottom: $small-spacing;
-	padding: $base-spacing / 3;
-	transition: border-color $base-duration $base-timing;
+select {
+	margin-bottom: $form-select-margin-bottom;
 	width: 100%;
-
-	&:hover {
-		border-color: shade($base-border-color, 20%);
-	}
-
-	&:focus {
-		border-color: $action-color;
-		box-shadow: $form-box-shadow-focus;
-		outline: none;
-	}
-
-	&:disabled {
-		background-color: shade($base-background-color, 5%);
-		cursor: not-allowed;
-
-		&:hover {
-			border: $base-border;
-		}
-	}
 }
 
 textarea {
 	resize: vertical;
 }
 
-[type="search"] {
-	appearance: none;
-}
-
 [type="checkbox"],
 [type="radio"] {
 	display: inline;
-	margin-right: $small-spacing / 2;
-
-	+ label {
-		display: inline-block;
-	}
+	margin-right: $form-radio-margin-right;
 }
 
 [type="file"] {
-	margin-bottom: $small-spacing;
+	margin-bottom: $form-file-margin-bottom;
 	width: 100%;
-}
-
-select {
-	margin-bottom: $base-spacing;
-	max-width: 100%;
-	width: auto;
 }

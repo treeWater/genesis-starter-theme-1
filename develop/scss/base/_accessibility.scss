@@ -1,0 +1,50 @@
+//--------------------------------------------------------------
+// Screen Reader Text
+//--------------------------------------------------------------
+
+.screen-reader-text,
+.screen-reader-text span,
+.screen-reader-shortcut {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus,
+.screen-reader-shortcut:focus,
+.widget_search input[type="submit"]:focus {
+	background: $a11y-screen-reader-text-background;
+	clip: auto !important;
+	color: $a11y-screen-reader-text;
+	display: block;
+	font-weight: $base-font-weight--bold;
+	height: auto;
+	text-decoration: none;
+	width: auto;
+	z-index: $a11y-screen-reader-text-z-index;
+}
+
+//--------------------------------------------------------------
+// Skip Links
+//--------------------------------------------------------------
+
+.genesis-skip-link {
+	margin: 0;
+
+	li {
+		height: 0;
+		width: 0;
+		list-style: none;
+	}
+}
+
+//--------------------------------------------------------------
+// Focus
+//--------------------------------------------------------------
+
+::focus {
+	outline: $a11y-border-focus-color solid 1px;
+}

@@ -1,0 +1,57 @@
+//--------------------------------------------------------------
+// Colour Palette | Private variables, do not use outside this file.
+//--------------------------------------------------------------
+$_default-black: #1e1f1f;
+$_default-white: #fff;
+
+$_grey-alpha: #f2f2f2;
+$_grey-bravo: #c8c8c8;
+$_grey-charlie: #d7d7d7;
+$_grey-delta: #e6e6e6;
+$_grey-echo: #f5f5f5;
+$_grey-foxtrot: #fafafa;
+$_grey-golf: #454647;
+$_grey-hotel: #6f6f6f;
+
+$_yellow-alpha: #f4d542;
+$_blue-alpha: #20608c;
+$_orange-alpha: #ea6435;
+$_red-alpha: #cb2027;
+
+//--------------------------------------------------------------
+// Theme Colour Usage
+//--------------------------------------------------------------
+
+/* Base */
+$base-font-color: $_grey-golf;
+$base-link-color: $_default-black;
+$border-color: $_grey-charlie;
+$border-color--hover: $_grey-bravo;
+
+/* Accessibility */
+$a11y-screen-reader-text: $_default-black;
+$a11y-screen-reader-text-background: $_grey-bravo;
+$a11y-border-focus-color: $_grey-bravo;
+
+/* Buttons */
+$button-background: $_default-black;
+$button-background--hover: $_red-alpha;
+$button-color: $_default-white;
+$button-color--hover: $button-color;
+
+/* Forms */
+$form-input-background-color: $_default-white;
+$form-border-color: $_grey-hotel;
+$form-border-color--hover: shade($form-border-color, 20%);
+$form-border-color--focus: $_red-alpha;
+$form-border-color--disabled: shade($form-input-background-color, 5%);
+$form-font-color: $_default-black;
+$form-border-color-hover: darken($_grey-hotel, 5%);
+$form-border-color-focus: darken($_grey-hotel, 15%);
+$form-box-shadow-color: $_default-black;
+$form-box-shadow-color--focus: $_red-alpha;
+$form-placeholder-color: $_default-black;
+
+/* Tables */
+$table-th-border-color: shade($border-color, 25%);
+$table-td-border-color: $border-color;
