@@ -4,13 +4,6 @@
 $base-container-width: 940px;
 $base-default-percentage-padding: 5%;
 
-/* Breakpoints */
-$screen--xs: new-breakpoint(360px);
-$screen--s: new-breakpoint(480px);
-$screen--m: new-breakpoint(768px);
-$screen--l: new-breakpoint(1024px);
-$screen--xl: new-breakpoint(1140px);
-
 //--------------------------------------------------------------
 // Spacing | Private variables, do not use outside this file.
 //--------------------------------------------------------------
