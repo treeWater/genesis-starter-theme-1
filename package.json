@@ -9,6 +9,7 @@
   "main": "Gulpfile.js",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-stats": "^0.0.4",
     "gulp-wp-toolkit": "^1.0.2"
   }
 }

@@ -4,6 +4,8 @@ var gulp = require('gulp'),
     pkg = require('./package.json'),
     toolkit = require('gulp-wp-toolkit');
 
+require('gulp-stats')(gulp);
+
 toolkit.extendConfig({
     theme: {
         name: "Genesis Starter Theme",
