@@ -23,7 +23,6 @@ function load_theme_components() {
         'components/assets.php',
         'components/header.php',
         'components/oembed.php',
-        'components/shame.php',
     ];
     load_specified_files( $file_names );
 }
