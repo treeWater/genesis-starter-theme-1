@@ -14,7 +14,7 @@ add_filter( 'embed_oembed_html', __NAMESPACE__ . '\embed_wrap' );
  * Wrap embedded media as suggested by Readability
  *
  * @link https://gist.github.com/965956
- * @link https://gist.github.com/965956@link http://www.readability.com/publishers/guidelines#publisher
+ * @link http://www.readability.com/publishers/guidelines#publisher
  *
  * @since 1.0.0
  *
