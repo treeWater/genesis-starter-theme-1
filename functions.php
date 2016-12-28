@@ -47,7 +47,7 @@ function child_theme_setup() {
 	 *
 	 * @since 1.0.0
 	 */
-	include_once 'lib/classes/class-setup.php';
+	include_once( CHILD_THEME_DIR . '/lib/classes/class-setup.php' );
 
 	/**
 	 * Load theme config using our Setup class.
@@ -56,7 +56,7 @@ function child_theme_setup() {
 	 *
 	 * @since 1.0.0
 	 */
-	new Setup( include_once 'lib/config.php' );
+	new Setup( include_once( CHILD_THEME_DIR . '/lib/config.php' ) );
 
 	/**
 	 * Load child theme customizations.
@@ -65,6 +65,6 @@ function child_theme_setup() {
 	 *
 	 * @since 1.0.0
 	 */
-	include_once 'lib/autoload.php';
+	include_once( CHILD_THEME_DIR . '/lib/autoload.php' );
 
 }
