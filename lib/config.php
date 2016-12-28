@@ -43,8 +43,9 @@ return [
 				'search-form',
 			],
 			'genesis-accessibility'           => [
-				'headings',
+				'404-page',
 				'drop-down-menu',
+				'headings',
 				'rems',
 				'search-form',
 				'skip-links',
