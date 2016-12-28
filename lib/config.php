@@ -83,6 +83,7 @@ return [
 
 		'sidebars' => [
 			'unregister' => [
+				'sidebar-alt',
 			],
 		],
 	],
