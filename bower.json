@@ -3,6 +3,5 @@
 	"dependencies": {
 	},
 	"devDependencies": {
-		"Cortana": "^1.2.9"
 	}
 }
