@@ -24,7 +24,7 @@ function load_scripts_styles() {
 
 	wp_enqueue_style( 'fonts', '//fonts.googleapis.com/css?family=Lato:300,400,700' );
 	wp_enqueue_style( 'dashicons' );
-	wp_enqueue_script( 'gst-theme', CHILD_THEME_URI . '/js/theme' . $suffix . '.js', [ 'jquery', 'vendor' ], CHILD_THEME_VERSION, true );
+	wp_enqueue_script( 'gst-theme', CHILD_THEME_URI . '/js/theme' . $suffix . '.js', [ 'jquery' ], CHILD_THEME_VERSION, true );
 }
 
 add_filter( 'genesis_pre_load_favicon', __NAMESPACE__ . '\pre_load_favicon' );
