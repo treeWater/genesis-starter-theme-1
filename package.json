@@ -7,7 +7,7 @@
   "repository": "https://github.com/craigsimps/genesis-starter-theme.git",
   "license": "GPL-2.0",
   "main": "Gulpfile.js",
-  "dependencies": {
+  "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-wp-toolkit": "^1.0.2"
   }
