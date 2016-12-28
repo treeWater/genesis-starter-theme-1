@@ -40,7 +40,7 @@ function child_theme_setup() {
 	 *
 	 * @since 1.0.0
 	 */
-	load_child_theme_textdomain( 'genesis-starter-theme', apply_filters( 'child_theme_textdomain', get_stylesheet_directory() . '/languages', 'genesis-starter-theme' ) );
+	load_child_theme_textdomain( 'genesis-starter-theme', get_stylesheet_directory() . '/languages' );
 
 	/**
 	 * Load child theme setup class.
