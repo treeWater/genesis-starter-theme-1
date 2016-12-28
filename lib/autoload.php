@@ -21,9 +21,7 @@ namespace Project\Theme;
 function load_theme_components() {
     $file_names = [
         'components/assets.php',
-        'components/cleanup.php',
         'components/header.php',
-        'components/navigation.php',
         'components/oembed.php',
         'components/shame.php',
     ];
