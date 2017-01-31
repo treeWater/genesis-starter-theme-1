@@ -13,6 +13,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
+	require __DIR__ . '/vendor/autoload.php';
+}
+
 add_action( 'genesis_setup', __NAMESPACE__ . '\child_theme_setup', 10 );
 /**
  * After Genesis has finished loading, load up child theme files.
@@ -35,36 +39,9 @@ function child_theme_setup() {
 	define( 'CHILD_THEME_DIR', get_stylesheet_directory() );
 	define( 'CHILD_THEME_URI', get_stylesheet_directory_uri() );
 
-	/**
-	 * Set localization.
-	 *
-	 * @since 1.0.0
-	 */
+	// Set localization.
 	load_child_theme_textdomain( $child_theme->get( 'TextDomain' ) , get_stylesheet_directory() . '/languages' );
 
-	/**
-	 * Load child theme setup class.
-	 *
-	 * @since 1.0.0
-	 */
-	include_once( CHILD_THEME_DIR . '/lib/classes/class-setup.php' );
-
-	/**
-	 * Load theme config using our Setup class.
-	 *
-	 * @uses Setup
-	 *
-	 * @since 1.0.0
-	 */
+	// Load theme config using our Setup class.
 	new Setup( include_once( CHILD_THEME_DIR . '/lib/config.php' ) );
-
-	/**
-	 * Load child theme customizations.
-	 *
-	 * Loads our custom functions, assets and theme customizations.
-	 *
-	 * @since 1.0.0
-	 */
-	include_once( CHILD_THEME_DIR . '/lib/autoload.php' );
-
 }

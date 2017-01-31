@@ -13,12 +13,12 @@ They are available as a standalone package, [`gulp-wp-toolkit`](https://github.c
 
 This theme is structured with a `/develop/` directory which houses uncompressed images, SCSS files and uncompiled JS. Gulp will then compile these files and output them within folders in the theme directory.
 
-Theme configuration is loaded within `functions.php`, however this is carried out using a `Setup` class (`/lib/classes/class-setup.php`), and `/lib/config.php` which holds all of our theme configuration. Other code and customisations are held within `/lib/components/`, and are loaded by adding the filename to our autoload function within `/lib/autoload.php`.
+Theme configuration is loaded within `functions.php`, however this is carried out using a `Setup` class (`/lib/Setup.php`), and `/lib/config.php` which holds all of our theme configuration. Other code and customisations are held within `/lib/components/`, and are loaded by adding the filename to our autoload function within `/lib/autoload.php`.
 
 Custom page templates will be held within the `templates` folder. I will also typically abstract out markup (such as single entries from a custom loop) into small files held within the `/views/` folder.
 
 ## Installation/ Setup
 
-Clone the repository to your WordPress `/themes/` directory. It won't work straight out of the box, because there's no compiled stylesheet held within the repository - run `npm install`, and then `gulp build` to get started.
+Clone the repository to your WordPress `/themes/` directory. It won't work straight out of the box, because there's no compiled stylesheet held within the repository - run `npm install`, and then `gulp build` to get started. You'll also need to run `composer install`, so that the Composer autoloader is built.
 
 From there, run `gulp build` or optionally `gulp serve` (if you want to see changes happen instantly in your browser using Browser Sync) and build a custom theme. More information about the available Gulp tasks can be found within the [`gulp-wp-toolkit`](https://github.com/craigsimps/gulp-wp-toolkit/) repository.
