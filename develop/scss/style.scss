@@ -36,4 +36,21 @@
 //--------------------------------------------------------------
 
 @import "structure/wrap";
+@import "structure/header";
+@import "structure/inner";
+@import "structure/footer-widgets";
+@import "structure/footer";
 
+//--------------------------------------------------------------
+// Layouts
+//--------------------------------------------------------------
+
+@import "layouts/full-width-content";
+@import "layouts/content-sidebar";
+@import "layouts/sidebar-content";
+
+//--------------------------------------------------------------
+// Components
+//--------------------------------------------------------------
+
+@import "components/title-area";

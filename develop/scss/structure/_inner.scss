@@ -1,0 +1,8 @@
+.site-inner {
+	background-color: $site-inner-background;
+	padding: $site-inner-padding-small;
+
+	@include media($screen--m) {
+		padding: $site-inner-padding-large;
+	}
+}

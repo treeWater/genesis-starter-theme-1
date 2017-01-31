@@ -1,0 +1,7 @@
+.site-footer {
+	padding: $site-footer-padding-small;
+
+	@include media($screen--m) {
+		padding: $site-footer-padding-large;
+	}
+}

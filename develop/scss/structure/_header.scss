@@ -1,0 +1,27 @@
+.site-header {
+	padding: $site-header-padding-small;
+
+	@include media($screen--m) {
+		padding: $site-header-padding-large;
+	}
+
+	.title-area {
+		@include media($screen--m) {
+			@include span-columns(4);
+		}
+	}
+
+	.header-widget-area {
+		@include media($screen--m) {
+			@include span-columns(8);
+		}
+	}
+
+	.header-full-width & {
+		.title-area {
+			@include media($screen--m) {
+				@include span-columns(12);
+			}
+		}
+	}
+}

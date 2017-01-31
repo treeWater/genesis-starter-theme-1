@@ -1,0 +1,14 @@
+.sidebar-content {
+	.content {
+		@include media($screen--m) {
+			@include span-columns(8);
+			@include shift(4);
+		}
+	}
+	.sidebar {
+		@include media($screen--m) {
+			@include span-columns(4);
+			@include shift(-12);
+		}
+	}
+}

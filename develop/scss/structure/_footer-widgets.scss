@@ -1,0 +1,13 @@
+.footer-widgets {
+	padding: $footer-widgets-padding-small;
+
+	@include media($screen--m) {
+		padding: $footer-widgets-padding-large;
+	}
+
+	.widget-area {
+		@include media($_spacing--m) {
+			@include span-columns(4);
+		}
+	}
+}

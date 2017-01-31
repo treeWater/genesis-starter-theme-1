@@ -1,0 +1,8 @@
+.full-width-content {
+	.content {
+		@include media($screen--m) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+	}
+}
