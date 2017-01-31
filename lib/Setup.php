@@ -9,10 +9,6 @@
 
 namespace Project\Theme;
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
-
 /**
  * Theme setup class.
  *
