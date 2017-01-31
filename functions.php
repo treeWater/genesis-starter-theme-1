@@ -43,5 +43,5 @@ function child_theme_setup() {
 	load_child_theme_textdomain( $child_theme->get( 'TextDomain' ) , get_stylesheet_directory() . '/languages' );
 
 	// Load theme config using our Setup class.
-	new Setup( include_once( CHILD_THEME_DIR . '/lib/config.php' ) );
+	new Setup( include_once( CHILD_THEME_DIR . '/config/defaults.php' ) );
 }
