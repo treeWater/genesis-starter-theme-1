@@ -7,18 +7,20 @@
     {
       "name": "Craig Simpson",
       "email": "craig@craigsimpson.scot",
-      "homepage": "https://craigsimpson.scot"
+      "homepage": "https://craigsimpson.scot",
+      "role": "Developer"
     }
-  ],
-  "keywords": [
-    "wordpress"
   ],
   "support": {
     "issues": "https://github.com/craigsimps/genesis-starter-theme/issues",
     "source": "https://github.com/craigsimps/genesis-starter-theme"
   },
+  "config": {
+    "sort-order": true
+  },
   "require": {
     "php": ">=5.3.4",
-    "composer/installers": "~1.0"
+    "composer/installers": "~1.0",
+    "roave/security-advisories": "dev-master"
   }
 }
