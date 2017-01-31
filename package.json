@@ -1,15 +1,31 @@
 {
   "name": "genesis-starter-theme",
-  "homepage": "https://craigsimpson.scot/",
   "version": "1.0.0",
-  "author": "Craig Simpson <craig@craigsimpson.scot>",
-  "description": "This is my starter theme for creating custom websites using the Genesis Framework.",
-  "repository": "https://github.com/craigsimps/genesis-starter-theme.git",
+  "description": "Child theme for creating custom websites using the Genesis Framework.",
+  "homepage": "https://craigsimpson.scot/",
+  "keywords": [
+    "Project Name",
+    "Genesis",
+    "WordPress",
+    "child theme"
+  ],
+  "bugs": {
+    "url": "https://github.com/craigsimps/genesis-starter-theme/issues"
+  },
   "license": "GPL-2.0",
-  "main": "Gulpfile.js",
+  "author": "Craig Simpson <craig@craigsimpson.scot>",
+  "repository": "https://github.com/craigsimps/genesis-starter-theme.git",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-stats": "^0.0.4",
     "gulp-wp-toolkit": "^1.0.2"
+  },
+  "private": true,
+  "theme": {
+    "name": "My Theme",
+    "description": "Child theme for Genesis Framework, for Example.com.",
+    "tags": "See https://make.wordpress.org/themes/handbook/review/required/theme-tags/ for valid tags",
+    "licenseuri": "http://www.opensource.org/licenses/gpl-license.php",
+    "domainpath": "/languages"
   }
 }
