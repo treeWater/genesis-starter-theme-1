@@ -14,7 +14,8 @@ toolkit.extendConfig({
         author: pkg.author,
         version: pkg.version,
         license: pkg.license,
-        textdomain: pkg.name
+        textdomain: pkg.name,
+        template: "genesis"
     }
 });
 
