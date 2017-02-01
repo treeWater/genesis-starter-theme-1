@@ -32,7 +32,7 @@ function maybe_move_primary_nav() {
  */
 remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
 
-//add_filter( 'genesis_seo_title', __NAMESPACE__ . '\header_inline_logo' );
+add_filter( 'genesis_seo_title', __NAMESPACE__ . '\header_inline_logo' );
 /**
  * Inline logo file
  *
@@ -44,5 +44,6 @@ function header_inline_logo() {
 	$wrap = genesis_is_root_page() && 'title' === genesis_get_seo_option( 'home_h1_on' ) ? 'h1' : 'p';
 	$wrap = genesis_is_root_page() && ! genesis_get_seo_option( 'home_h1_on' ) ? 'h1' : $wrap;
 	$wrap = genesis_html5() && genesis_get_seo_option( 'semantic_headings' ) ? 'h1' : $wrap;
+
 	return sprintf( '<%1$s %2$s>%3$s</%1$s>', $wrap, genesis_attr( 'site-title' ), $inside );
 }

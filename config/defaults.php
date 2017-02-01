@@ -67,8 +67,7 @@ return [
 			'genesis-footer-widgets'          => 3,
 		],
 
-		'add_image_size' => [
-		],
+		'add_image_size' => [],
 
 		'genesis_unregister_layout' => [
 			'content-sidebar-sidebar',
@@ -101,6 +100,5 @@ return [
 	 * ================================================================
 	 */
 
-	'theme_settings_defaults' => [
-	],
+	'theme_settings_defaults' => [],
 ];
