@@ -19,7 +19,7 @@
     "sort-order": true
   },
   "require": {
-    "php": ">=5.3.4",
+    "php": "^7",
     "composer/installers": "~1.0",
     "roave/security-advisories": "dev-master"
   },
