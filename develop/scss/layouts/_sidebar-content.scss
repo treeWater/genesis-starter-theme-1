@@ -5,6 +5,7 @@
 			@include shift(4);
 		}
 	}
+
 	.sidebar {
 		@include media($screen--m) {
 			@include span-columns(4);

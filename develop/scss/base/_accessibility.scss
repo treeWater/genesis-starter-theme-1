@@ -5,18 +5,18 @@
 .screen-reader-text,
 .screen-reader-text span,
 .screen-reader-shortcut {
-	position: absolute !important;
+	border: 0;
 	clip: rect(0, 0, 0, 0);
 	height: 1px;
-	width: 1px;
-	border: 0;
 	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
 	word-wrap: normal !important;
 }
 
 .screen-reader-text:focus,
 .screen-reader-shortcut:focus,
-.widget_search input[type="submit"]:focus {
+.widget_search [type="submit"]:focus {
 	background: $a11y-screen-reader-text-background;
 	clip: auto !important;
 	color: $a11y-screen-reader-text;
@@ -37,8 +37,8 @@
 
 	li {
 		height: 0;
-		width: 0;
 		list-style: none;
+		width: 0;
 	}
 }
 
@@ -46,6 +46,6 @@
 // Focus
 //--------------------------------------------------------------
 
-::focus {
+:focus {
 	outline: $a11y-border-focus-color solid 1px;
 }
