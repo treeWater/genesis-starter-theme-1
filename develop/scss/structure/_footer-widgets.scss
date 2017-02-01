@@ -6,7 +6,7 @@
 	}
 
 	.widget-area {
-		@include media($_spacing--m) {
+		@include media($screen--m) {
 			@include span-columns(4);
 		}
 	}
