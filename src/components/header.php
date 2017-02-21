@@ -18,6 +18,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 add_action( 'genesis_before_header', __NAMESPACE__ . '\maybe_move_primary_nav' );
 /**
  * Maybe move the primary navigation to the header (if no widget in header-right).
+ *
+ * @since 1.0.0
  */
 function maybe_move_primary_nav() {
 	if ( is_active_sidebar( 'header-right' ) ) {
@@ -30,7 +32,7 @@ function maybe_move_primary_nav() {
 /**
  * Remove the site description
  *
- * @since 1.0
+ * @since 1.0.0
  */
 remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
 
@@ -38,7 +40,7 @@ add_filter( 'genesis_seo_title', __NAMESPACE__ . '\header_inline_logo' );
 /**
  * Inline logo file
  *
- * @since 1.0
+ * @since 1.0.0
  */
 function header_inline_logo(): string {
 	$logo = '<img src="' . esc_url( CHILD_THEME_URI . '/assets/images/logo.png' ) . '" alt="' . esc_attr( get_bloginfo( 'name' ) ) . ' Homepage" width="800" height="84" />';

@@ -19,7 +19,7 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\load_scripts_styles' );
 /**
  * Enqueue scripts and styles.
  *
- * @since 1.0
+ * @since 1.0.0
  */
 function load_scripts_styles() {
 	$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
@@ -33,7 +33,7 @@ add_filter( 'genesis_pre_load_favicon', __NAMESPACE__ . '\pre_load_favicon' );
 /**
  * Simple favicon override to specify your favicon's location.
  *
- * @since 1.0
+ * @since 1.0.0
  */
 function pre_load_favicon(): string {
 	return CHILD_THEME_URI . '/assets/images/favicon.ico';
