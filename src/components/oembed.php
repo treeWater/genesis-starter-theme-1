@@ -24,7 +24,7 @@ add_filter( 'oembed_dataparse', __NAMESPACE__ . '\embed_wrap', 10, 3 );
  * @param string     $url  oEmbed URL.
  * @return string Wrapped oEmbed HTML.
  */
-function embed_wrap( string $html, \WP_oEmbed $data, string $url ) {
+function embed_wrap( string $html, \WP_oEmbed $data, string $url ): string {
 	preg_match( '#(http|ftp)s?://(www\.)?([a-z0-9\.\-]+)/?.*#i', $url, $matches );
 	$domain = str_replace( '.', '-', $matches[3] );
 

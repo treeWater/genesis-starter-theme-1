@@ -35,6 +35,6 @@ add_filter( 'genesis_pre_load_favicon', __NAMESPACE__ . '\pre_load_favicon' );
  *
  * @since 1.0
  */
-function pre_load_favicon() {
+function pre_load_favicon(): string {
 	return CHILD_THEME_URI . '/assets/images/favicon.ico';
 }

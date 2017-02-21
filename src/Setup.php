@@ -69,7 +69,7 @@ class Setup {
 	 * @param array $defaults Default array of settings passed in from the filter.
 	 * @return array Return the amended settings defaults array.
 	 */
-	public function theme_settings_defaults_filter( $defaults ) {
+	public function theme_settings_defaults_filter( array $defaults ): array {
 		return wp_parse_args( $this->config['theme_settings_defaults'], $defaults );
 	}
 
