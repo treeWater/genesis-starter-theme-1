@@ -13,3 +13,6 @@ node_modules/
 # Ignore the stylesheet, and map.
 style.css
 style.css.map
+
+# Ignore local PHPCS config file.
+phpcs.xml
