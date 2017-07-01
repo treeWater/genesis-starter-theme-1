@@ -8,9 +8,9 @@ require('gulp-stats')(gulp);
 
 toolkit.extendConfig({
     theme: {
-        name: "Genesis Starter Theme",
+        name: pkg.theme.name,
         homepage: pkg.homepage,
-        description: pkg.description,
+        description: pkg.theme.description,
         author: pkg.author,
         version: pkg.version,
         license: pkg.license,
