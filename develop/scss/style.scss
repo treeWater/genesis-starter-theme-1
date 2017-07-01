@@ -21,36 +21,22 @@
 // Defaults
 //--------------------------------------------------------------
 
-@import "base/layout";
-@import "base/typography";
-@import "base/headings";
-@import "base/forms";
-@import "base/buttons";
-@import "base/lists";
-@import "base/tables";
-@import "base/media";
-@import "base/accessibility";
+@import "base/*";
 
 //--------------------------------------------------------------
 // Structure
 //--------------------------------------------------------------
 
-@import "structure/wrap";
-@import "structure/header";
-@import "structure/inner";
-@import "structure/footer-widgets";
-@import "structure/footer";
+@import "structure/*";
 
 //--------------------------------------------------------------
 // Layouts
 //--------------------------------------------------------------
 
-@import "layouts/full-width-content";
-@import "layouts/content-sidebar";
-@import "layouts/sidebar-content";
+@import "layouts/*";
 
 //--------------------------------------------------------------
 // Components
 //--------------------------------------------------------------
 
-@import "components/title-area";
+@import "components/*";
